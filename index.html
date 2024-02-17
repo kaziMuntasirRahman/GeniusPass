@@ -70,7 +70,7 @@
     </section>
   </header>
 
-  <main class="mb-[120px]">
+  <main class="mb-[120px] flex flex-col justify-between gap-[120px]">
     <section class="offer-section px-32 flex flex-col gap-12 justify-center">
       <h1 class="text-center text-gray-950 text-[40px] font-bold font-['Raleway']">Best offers for you</h1>
       <div class="flex justify-between flex-col lg:flex-row">
@@ -118,6 +118,66 @@
         class="w-max h-14 px-[30px] py-4 bg-opacity-10 rounded-xl border border-[#1DD100] border-opacity-40 justify-center items-center gap-2.5 inline-flex mx-auto mt-4 text-[#1DD100] text-xl font-bold font-['Raleway']">See
         All Offers
       </button>
+    </section>
+    <section
+      class="buy-ticket w-full bg-stone-50 rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-lime-400 px-[135px] py-[120px] flex flex-col">
+
+      <h2 class="text-center text-gray-950 text-[40px] font-bold font-['Raleway']">City Cruiser</h2>
+      <p
+        class="w-[736px] text-center text-gray-950 text-opacity-60 text-lg font-normal font-['Inter'] leading-[30px] mx-auto">
+        Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow
+        for a streamlined .</p>
+      <div class="bus-info-container flex bg-white">
+        <div class="bus-info flex-1 p-8">
+          <div class="bus-info-head flex items-center gap-4">
+            <img src="images/bus-logo.png" alt="">
+            <div class="bus-info-head-header">
+              <div class="text-gray-950 text-[32px] font-bold font-['Raleway']">Horizon Coach</div>
+              <p class="text-gray-950 text-opacity-60 text-lg font-normal font-['Inter']">Coach-009-WEB ! AC_Business
+              </p>
+            </div>
+            <button
+              class="h-12 px-[30px] py-4 bg-lime-600 bg-opacity-10 rounded-xl border border-lime-400 border-opacity-40 justify-center items-center gap-2.5 inline-flex ml-auto">
+              <img src="images/seat-green.png" class="w-6 h-6 relative flex-col justify-start items-start inline-flex">
+              <div class="text-center text-[#1DD100] text-lg font-medium font-['Inter']"><span
+                  id="remaining-seat">40</span> seats left</div>
+            </button>
+          </div>
+          <div class="bus-schedule bg-stone-50 rounded-3xl p-8 flex flex-col gap-6">
+            <div class="route flex justify-between">
+              <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Route</p>
+              <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Dhaka-Sylhet</p>
+            </div>
+            <div class="w-full h-[0px] border border-dashed border-gray-950 border-opacity-20"></div>
+            <div class="departure  flex justify-between">
+              <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Departure Time</p>
+              <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">9:00 PM</p>
+            </div>
+            <div class="w-full h-[0px] border border-dashed border-gray-950 border-opacity-20"></div>
+            <div class="destination-info flex justify-between gap-6">
+              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-4">
+                <h3 class="text-gray-950 text-opacity-80 font-medium font-['Inter']">Boarding Point - Laxmipur</h3>
+              </div>
+              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-4">
+                <h3 class="text-gray-950 text-opacity-80 font-medium font-['Inter']">Dropping Point - Bogura</h3>
+              </div>
+              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-4">
+                <h3 class="text-gray-950 text-opacity-80 font-medium font-['Inter']">Est. Time - 11 Hour</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/info-devider.png" alt="">
+        <div class="ticket-price-container flex flex-col items-center justify-center gap-6 flex-1">
+          <img src="images/fare.png" alt="">
+          <div class="text-center text-gray-950 text-[32px] font-bold font-['Raleway'] leading-10">
+            <span id="per-ticket-price">550</span> Taka
+            <br />
+            <span class="text-gray-950 text-opacity-60 text-2xl font-semibold">Per Seat</span>
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
   <footer class="w-full bg-black px-[135px] py-[120px]">
