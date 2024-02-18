@@ -6,15 +6,16 @@ const grandPriceText = document.getElementById('grand-total');
 let grandPrice = parseInt(grandPriceText.innerText);
 const remainingSeatsText = document.getElementById('remaining-seat');
 let remainingSeats = parseInt(remainingSeatsText.innerText);
+const applyButton = document.getElementById('apply-btn');
 
 function addNewRow(button) {
   if (button.getAttribute('data-clicked') === 'true') {
     alert('This seat has already been booked.');
     return;
   }
-
   if (numberOfSeat === 4) {
     alert('You cannot  buy more than 4 tickets at a same time.');
+    applyButton.classList.add('cursor-pointer', 'opacity-100', 'enabled');
     return;
   }
 
@@ -32,11 +33,11 @@ function addNewRow(button) {
     if(i===1){
       paragraph.classList.add('justify-self-center')
     }
-    if(i===2){
+    else if(i===2){
       paragraph.classList.add('justify-self-end')
     }
   }
-
+  
   button.setAttribute('data-clicked', 'true');
 
   remainingSeats--;
@@ -47,5 +48,11 @@ function addNewRow(button) {
   totalPriceText.innerText = totalPrice;
   grandPrice = totalPrice;
   grandPriceText.innerText = totalPrice;
-
+  
+  if(numberOfSeat === 4){
+    applyButton.classList.add('opacity-100');
+    applyButton.style.cursor = 'pointer';
+    applyButton.style.pointerEvents = 'auto';
+    console.log(applyButton);
+  }
 }

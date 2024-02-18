@@ -83,7 +83,7 @@
           </div>
           <img src="images/cupon-devider.png">
           <div class="coupon-code flex flex-col justify-center items-center px-[52px]">
-            <div class="text-center"><span
+            <div class="text-center"><span id="first-coupon"
                 class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">NEW15<br /></span><span
                 class="text-gray-950 text-opacity-40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</span>
             </div>
@@ -102,9 +102,8 @@
           </div>
           <img src="images/cupon-devider.png">
           <div class="coupon-code flex flex-col justify-center items-center px-[52px]">
-            <div class="text-center"><span
-                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple
-                20<br /></span><span
+            <div class="text-center"><span id="second-coupon"
+                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple 20<br /></span><span
                 class="text-gray-950 text-opacity-40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</span>
             </div>
           </div>
@@ -296,10 +295,11 @@
               <h3 class="">Total Price</h3>
               <h3 class="">BDT <span id="total-price">0</span></h3>
             </div>
-            <label class="input flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Have any Coupon?" />
-              <button
-                class="badge badge-info w-20 h-10 bg-[#1DD100] rounded-lg text-white text-base font-semibold font-['Inter']">Apply</button>
+            <label class="input flex items-center">
+              <input id="input-coupon" type="text" class="grow" placeholder="Have any Coupon?"/>
+              <button id="apply-btn"
+                class="badge badge-info w-20 h-10 bg-[#1DD100] rounded-lg text-white text-base font-semibold font-['Inter'] pointer-events-none opacity-30 disabled"
+                onclick="couponApply()">Apply</button>
             </label>
             <div class="text-gray-950 text-base font-medium font-['Inter'] flex justify-between">
               <h3>Grand Total</h3>
@@ -357,7 +357,9 @@
       </div>
       <div class="flex flex-col gap-5">
         <p class="text-right text-white text-xl font-semibold font-['Raleway']">Download our app</p>
-        <img src="images/play-store-button.png" alt="">
+        <a href="https://play.google.com/store/apps" target="_blank">
+          <img src="images/play-store-button.png" alt="">
+        </a>
       </div>
     </section>
     <div class="w-full h-[0px] origin-top-left border-t-2 border-dashed border-white border-opacity-30 my-8">
@@ -373,6 +375,7 @@
   <script src="js/nav.js"></script>
   <script src="js/seats.js"></script>
   <script src="js/price-row-add.js"></script>
+  <script src="js/coupon-match.js"></script>
 </body>
 
 </html>
