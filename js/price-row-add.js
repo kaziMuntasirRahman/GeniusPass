@@ -14,7 +14,7 @@ function addNewRow(button) {
   }
 
   if (numberOfSeat === 4) {
-    alert('You can maximum buy 4 tickets at a same time.');
+    alert('You cannot  buy more than 4 tickets at a same time.');
     return;
   }
 
