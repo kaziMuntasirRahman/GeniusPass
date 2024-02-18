@@ -26,13 +26,10 @@
             </svg>
           </div>
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a class="text-center text-gray-950 text-opacity-70 text-lg font-medium font-['Raleway']">Home</a></li>
-            <li><a class="text-center text-gray-950 text-opacity-70 text-lg font-medium font-['Raleway']">About</a></li>
-            <li><a
-                class="text-center text-gray-950 text-opacity-70 text-lg font-medium font-['Raleway']">Destination</a>
-            </li>
-            <li><a class="text-center text-gray-950 text-opacity-70 text-lg font-medium font-['Raleway']">Search</a>
-            </li>
+            <li><a class="">Home</a></li>
+            <li><a class="">About</a></li>
+            <li><a class="">Destination</a></li>
+            <li><a class="">Search</a></li>
           </ul>
         </div>
         <a class="btn btn-ghost text-center text-gray-950 text-4xl font-extrabold font-['Raleway']"
@@ -40,11 +37,10 @@
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a class="text-center text-gray-950 text-opacity-70 text-lg font-medium font-['Raleway']">Home</a></li>
-          <li><a class="text-center text-gray-950 text-opacity-70 text-lg font-medium font-['Raleway']">About</a></li>
-          <li><a class="text-center text-gray-950 text-opacity-70 text-lg font-medium font-['Raleway']">Destination</a>
-          </li>
-          <li><a class="text-center text-gray-950 text-opacity-70 text-lg font-medium font-['Raleway']">Search</a></li>
+          <li><a class="">Home</a></li>
+          <li><a class="">About</a></li>
+          <li><a class="">Destination</a></li>
+          <li><a class="">Search</a></li>
         </ul>
       </div>
       <div class="navbar-end">
@@ -116,8 +112,7 @@
       </div>
       <button
         class="w-max h-14 px-[30px] py-4 bg-opacity-10 rounded-xl border border-[#1DD100] border-opacity-40 justify-center items-center gap-2.5 inline-flex mx-auto mt-4 text-[#1DD100] text-xl font-bold font-['Raleway']">See
-        All Offers
-      </button>
+        All Offers</button>
     </section>
     <section
       class="buy-ticket w-full bg-stone-50 rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-lime-400 px-[135px] py-[120px] flex flex-col gap-6">
@@ -201,103 +196,103 @@
             </div>
             <div class="seat-A flex gap-8 items-center">
               <p class="">A</p>
-              <button class="">A1</button>
-              <button class="mr-auto">A2</button>
-              <button class="">A3</button>
-              <button class="">A4</button>
+              <button id="seat-A1" onclick="addNewRow(this)" class="">A1</button>
+              <button id="seat-A2" onclick="addNewRow(this)" class="mr-auto">A2</button>
+              <button id="seat-A3" onclick="addNewRow(this)" class="">A3</button>
+              <button id="seat-A4" onclick="addNewRow(this)" class="">A4</button>
             </div>
 
             <div class="seat-B flex gap-8 items-center">
               <p class="">B</p>
-              <button class="">B1</button>
-              <button class="mr-auto">B2</button>
-              <button class="">B3</button>
-              <button class="">B4</button>
+              <button id="seat-B1" onclick="addNewRow(this)" class="">B1</button>
+              <button id="seat-B2" onclick="addNewRow(this)" class="mr-auto">B2</button>
+              <button id="seat-B3" onclick="addNewRow(this)" class="">B3</button>
+              <button id="seat-B4" onclick="addNewRow(this)" class="">B4</button>
             </div>
             <div class="seat-C flex gap-8 items-center">
               <p class="">C</p>
-              <button class="">C1</button>
-              <button class="mr-auto">C2</button>
-              <button class="">C3</button>
-              <button class="">C4</button>
+              <button id="seat-C1" onclick="addNewRow(this)" class="">C1</button>
+              <button id="seat-C2" onclick="addNewRow(this)" class="mr-auto">C2</button>
+              <button id="seat-C3" onclick="addNewRow(this)" class="">C3</button>
+              <button id="seat-C4" onclick="addNewRow(this)" class="">C4</button>
             </div>
             <div class="seat-D flex gap-8 items-center">
               <p class="">D</p>
-              <button class="">D1</button>
-              <button class="mr-auto">D2</button>
-              <button class="">D3</button>
-              <button class="">D4</button>
+              <button id="seat-D1" onclick="addNewRow(this)" class="">D1</button>
+              <button id="seat-D2" onclick="addNewRow(this)" class="mr-auto">D2</button>
+              <button id="seat-D3" onclick="addNewRow(this)" class="">D3</button>
+              <button id="seat-D4" onclick="addNewRow(this)" class="">D4</button>
             </div>
             <div class="seat-E flex gap-8 items-center">
               <p class="">E</p>
-              <button class="">E1</button>
-              <button class="mr-auto">E2</button>
-              <button class="">E3</button>
-              <button class="">E4</button>
+              <button id="seat-E1" onclick="addNewRow(this)" class="">E1</button>
+              <button id="seat-E2" onclick="addNewRow(this)" class="mr-auto">E2</button>
+              <button id="seat-E3" onclick="addNewRow(this)" class="">E3</button>
+              <button id="seat-E4" onclick="addNewRow(this)" class="">E4</button>
             </div>
             <div class="seat-F flex gap-8 items-center">
               <p class="">F</p>
-              <button class="">F1</button>
-              <button class="mr-auto">F2</button>
-              <button class="">F3</button>
-              <button class="">F4</button>
+              <button id="seat-F1" onclick="addNewRow(this)" class="">F1</button>
+              <button id="seat-F2" onclick="addNewRow(this)" class="mr-auto">F2</button>
+              <button id="seat-F3" onclick="addNewRow(this)" class="">F3</button>
+              <button id="seat-F4" onclick="addNewRow(this)" class="">F4</button>
             </div>
             <div class="seat-G flex gap-8 items-center">
               <p class="">G</p>
-              <button class="">G1</button>
-              <button class="mr-auto">G2</button>
-              <button class="">G3</button>
-              <button class="">G4</button>
+              <button id="seat-G1" onclick="addNewRow(this)" class="">G1</button>
+              <button id="seat-G2" onclick="addNewRow(this)" class="mr-auto">G2</button>
+              <button id="seat-G3" onclick="addNewRow(this)" class="">G3</button>
+              <button id="seat-G4" onclick="addNewRow(this)" class="">G4</button>
             </div>
             <div class="seat-H flex gap-8 items-center">
               <p class="">H</p>
-              <button class="">H1</button>
-              <button class="mr-auto">H2</button>
-              <button class="">H3</button>
-              <button class="">H4</button>
+              <button id="seat-H1" onclick="addNewRow(this)" class="">H1</button>
+              <button id="seat-H2" onclick="addNewRow(this)" class="mr-auto">H2</button>
+              <button id="seat-H3" onclick="addNewRow(this)" class="">H3</button>
+              <button id="seat-H4" onclick="addNewRow(this)" class="">H4</button>
             </div>
             <div class="seat-I flex gap-8 items-center">
               <p class="">I</p>
-              <button class="">I1</button>
-              <button class="mr-auto">I2</button>
-              <button class="">I3</button>
-              <button class="">I4</button>
+              <button id="seat-I1" onclick="addNewRow(this)" class="">I1</button>
+              <button id="seat-I2" onclick="addNewRow(this)" class="mr-auto">I2</button>
+              <button id="seat-I3" onclick="addNewRow(this)" class="">I3</button>
+              <button id="seat-I4" onclick="addNewRow(this)" class="">I4</button>
             </div>
             <div class="seat-J flex gap-8 items-center">
               <p class="">J</p>
-              <button class="">J1</button>
-              <button class="mr-auto">J2</button>
-              <button class="">J3</button>
-              <button class="">J4</button>
+              <button id="seat-J1" onclick="addNewRow(this)" class="">J1</button>
+              <button id="seat-J2" onclick="addNewRow(this)" class="mr-auto">J2</button>
+              <button id="seat-J3" onclick="addNewRow(this)" class="">J3</button>
+              <button id="seat-J4" onclick="addNewRow(this)" class="">J4</button>
             </div>
-
 
           </div>
         </div>
         <div class="w-0 h-full border-2 border-gray-950 border-opacity-30"></div>
+
         <div class="seat-you-selected flex flex-col gap-6 w-1/3">
           <h2 class="text text-gray-950 text-2xl font-semibold font-['Raleway']">Seat You Selected</h2>
           <div class="w-full h-[0px] border border-gray-950 border-opacity-20 border-dashed"></div>
+
           <div class="booked-cart w-full bg-stone-50 rounded-xl p-8 flex flex-col gap-4">
-            <div class="price-header flex justify-between items-center">
+
+            <div id="price-container" class="price-container grid grid-cols-3 gap-4 justify-items-start">
               <div class="flex items-center justify-center gap-1">
                 <h3 class="text-gray-950 text-base font-medium font-['Inter']">Seat</h3>
                 <div class="w-[23px] h-[13px] bg-[#1DD100] rounded-[5px] flex justify-center items-center">
-                  <div class="text-center text-white text-xs font-bold font-['Inter']">0</div>
+                  <div id="booked-seat-number" class="text-center text-white text-xs font-bold font-['Inter']">0</div>
                 </div>
               </div>
+
               <h3 class="text-gray-950 text-base font-medium font-['Inter']">Class</h3>
               <h3 class="text-gray-950 text-base font-medium font-['Inter']">Price</h3>
+              <div class="w-[369px] h-[0px] col-span-3 border border-dashed border-gray-950 border-opacity-20"></div>
             </div>
-            <div class="seat-price-details flex justify-between items-center">
-              <p class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter']">C2</p>
-              <p class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter']">Economy</p>
-              <p class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter']">550</p>
-            </div>
+
             <div class="w-full h-[0px] border border-gray-950 border-opacity-20"></div>
-            <div class="flex justify-between">
-              <h3 class="text-gray-950 text-base font-medium font-['Inter']">Total Price</h3>
-              <h3 class="text-gray-950 text-base font-medium font-['Inter']">BDT <span>0</span></h3>
+            <div class="flex justify-between text-gray-950 text-base font-medium font-['Inter']">
+              <h3 class="">Total Price</h3>
+              <h3 class="">BDT <span id="total-price">0</span></h3>
             </div>
             <label class="input flex items-center gap-2">
               <input type="text" class="grow" placeholder="Have any Coupon?" />
@@ -326,9 +321,9 @@
               <div class="text-center text-white text-xl font-extrabold font-['Raleway']">Next</div>
             </button>
             <div class="terms-n-condition flex justify-around">
-              <a class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter'] underline">Terms and
-                Conditions</a>
-              <a class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter'] underline">Cancellation
+              <a class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter'] underline cursor-pointer">Terms
+                and Conditions</a>
+              <a class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter'] underline cursor-pointer">Cancellation
                 Policy</a>
             </div>
           </form>
@@ -336,7 +331,7 @@
       </div>
     </section>
     <section id="success-msg-container"
-      class="success-msg-container hidden bg-stone-50 w-full h-screen flex justify-center items-center fixed top-0 left-0">
+      class="success-msg-container bg-stone-50 w-full h-screen flex justify-center items-center fixed top-0 left-0 hidden">
       <div class="success-msg px-16 py-14 bg-white max-w-fit flex flex-col items-center justify-between gap-5">
         <img src="images/success.png" alt="" class="mb-5">
         <div class="text-center text-green-500 text-2xl font-bold font-['Roboto' mb-5">SUCCESS</div>
@@ -373,7 +368,9 @@
 
     </section>
   </footer>
-  <script src="js/script1.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/seats.js"></script>
+  <script src="js/price-row-add.js"></script>
 </body>
 
 </html>
