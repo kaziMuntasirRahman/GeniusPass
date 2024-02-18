@@ -73,10 +73,10 @@
         <div class="coupon-1 bg-yellow-400 rounded-3xl flex gap-0">
           <div class="offer-percentage flex flex-col justify-center items-center px-[52px]">
             <div>
-              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">15% OFF<br />
-              </h2>
+              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">15% OFF</h2><br/>
+              
               <span class="text-gray-950 text-opacity-80 text-xl font-semibold font-['Inter'] leading-9">on your next
-                purchase<br /></span>
+                purchase</span><br/>
               <span class="text-gray-950 text-opacity-50 text-lg font-medium font-['Inter'] leading-9">use by January
                 2024</span>
             </div>
@@ -84,7 +84,7 @@
           <img src="images/cupon-devider.png">
           <div class="coupon-code flex flex-col justify-center items-center px-[52px]">
             <div class="text-center"><span id="first-coupon"
-                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">NEW15<br /></span><span
+                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">NEW15</span><br/><span
                 class="text-gray-950 text-opacity-40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</span>
             </div>
           </div>
@@ -92,10 +92,10 @@
         <div class="coupon-2 bg-red-300 rounded-3xl flex gap-0">
           <div class="offer-percentage flex flex-col justify-center items-center px-[52px]">
             <div>
-              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">20% OFF<br />
-              </h2>
+              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">20% OFF</h2><br/>
+              
               <span class="text-gray-950 text-opacity-80 text-xl font-semibold font-['Inter'] leading-9">on your next
-                purchase<br /></span>
+                purchase</span><br/>
               <span class="text-gray-950 text-opacity-50 text-lg font-medium font-['Inter'] leading-9">use by January
                 2024</span>
             </div>
@@ -103,7 +103,7 @@
           <img src="images/cupon-devider.png">
           <div class="coupon-code flex flex-col justify-center items-center px-[52px]">
             <div class="text-center"><span id="second-coupon"
-                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple 20<br /></span><span
+                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple 20</span><br/><span
                 class="text-gray-950 text-opacity-40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</span>
             </div>
           </div>
@@ -295,11 +295,10 @@
               <h3 class="">Total Price</h3>
               <h3 class="">BDT <span id="total-price">0</span></h3>
             </div>
-            <label class="input flex items-center">
+            <label id="coupon-level" class="input flex items-center">
               <input id="input-coupon" type="text" class="grow" placeholder="Have any Coupon?"/>
-              <button id="apply-btn"
-                class="badge badge-info w-20 h-10 bg-[#1DD100] rounded-lg text-white text-base font-semibold font-['Inter'] pointer-events-none opacity-30 disabled"
-                onclick="couponApply()">Apply</button>
+              <button id="apply-btn" onclick="hello()"
+                class="btn w-20 h-10 bg-[#1DD100] hover:bg-green-500 rounded-lg text-white text-base font-semibold font-['Inter'] opacity-40 pointer-events-none">Apply</button>
             </label>
             <div class="text-gray-950 text-base font-medium font-['Inter'] flex justify-between">
               <h3>Grand Total</h3>

@@ -20,7 +20,8 @@ function addNewRow(button) {
     return;
   }
 
-  button.classList.add('bg-lime-500', 'hover:bg-lime-700', 'text-white', 'font-medium');
+  button.classList.add('bg-green-700', 'hover:bg-green-400', 'text-white', 'font-medium');
+  
 
   const newRow = [button.innerText, 'Economy', 550];
   for (let i = 0; i < 3; i++) {
@@ -44,12 +45,9 @@ function addNewRow(button) {
   numberOfBookedSeatText.innerText = numberOfBookedSeat;
   totalPrice = numberOfBookedSeat*550;
   totalPriceText.innerText = totalPrice;
-  grandPrice = totalPrice;
   grandPriceText.innerText = totalPrice;
   
   if(numberOfBookedSeat === 4){
-    applyButton.classList.add('opacity-100');
-    applyButton.style.cursor = 'pointer';
-    applyButton.style.pointerEvents = 'auto';
+    applyButton.classList.remove('pointer-events-none', 'opacity-40');
   }
 }
