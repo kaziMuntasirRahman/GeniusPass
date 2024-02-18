@@ -134,8 +134,9 @@
             <div
               class="h-12 px-[30px] py-4 bg-lime-600 bg-opacity-10 rounded-xl border border-lime-400 border-opacity-40 justify-center items-center gap-2.5 inline-flex ml-auto">
               <img src="images/seat-green.png" class="w-6 h-6">
-              <div class="text-center text-[#1DD100] text-lg font-medium font-['Inter']"><span
-                  id="remaining-seat">40</span> seats left</div>
+              <div class="text-center text-[#1DD100] text-lg font-medium font-['Inter']">
+                <span id="remaining-seat">40</span> seats left
+              </div>
             </div>
           </div>
           <div class="bus-schedule bg-stone-50 rounded-3xl p-8 flex flex-col gap-6">
@@ -277,16 +278,18 @@
           <div class="booked-cart w-full bg-stone-50 rounded-xl p-8 flex flex-col gap-4">
 
             <div id="price-container" class="price-container grid grid-cols-3 gap-4 justify-items-start w-full">
-              <div class="flex items-center justify-center gap-1">
-                <h3 class="text-gray-950 text-base font-medium font-['Inter']">Seat</h3>
+              <div class="flex items-center  justify-center gap-1">
+                <h3 class="text-gray-950  font-medium font-['Inter']">Seat</h3>
                 <div class="w-[23px] h-[13px] bg-[#1DD100] rounded-[5px] flex justify-center items-center">
                   <div id="booked-seat-number" class="text-center text-white text-xs font-bold font-['Inter']">0</div>
                 </div>
               </div>
 
-              <h3 class="text-gray-950 text-base font-medium font-['Inter']">Class</h3>
-              <h3 class="text-gray-950 text-base font-medium font-['Inter']">Price</h3>
-              <div class="w-[369px] h-[0px] col-span-3 border border-dashed border-gray-950 border-opacity-20"></div>
+              <h3 class="text-gray-950 justify-self-center font-medium font-['Inter']">Class</h3>
+              <h3 class="text-gray-950 justify-self-end font-medium font-['Inter']">Price</h3>
+              <div
+                class="w-full h-[0px] col-span-3 border border-dashed border-gray-950 border-opacity-20 justify-self-stretch">
+              </div>
             </div>
 
             <div class="w-full h-[0px] border border-gray-950 border-opacity-20"></div>

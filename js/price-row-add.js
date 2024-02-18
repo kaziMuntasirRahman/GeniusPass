@@ -29,6 +29,12 @@ function addNewRow(button) {
     paragraph.textContent = newRow[i];
     bookedCartDiv.appendChild(paragraph);
     paragraph.classList.add('text-gray-950', 'text-opacity-60', 'font-normal')
+    if(i===1){
+      paragraph.classList.add('justify-self-center')
+    }
+    if(i===2){
+      paragraph.classList.add('justify-self-end')
+    }
   }
 
   button.setAttribute('data-clicked', 'true');
