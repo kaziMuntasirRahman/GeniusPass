@@ -1,5 +1,5 @@
-const numberOfSeatText = document.getElementById('booked-seat-number');
-let numberOfSeat = parseInt(numberOfSeatText.innerText);
+const numberOfBookedSeatText = document.getElementById('booked-seat-number');
+let numberOfBookedSeat = parseInt(numberOfBookedSeatText.innerText);
 const totalPriceText = document.getElementById('total-price');
 let totalPrice = parseInt(totalPriceText.innerText);
 const grandPriceText = document.getElementById('grand-total');
@@ -7,29 +7,27 @@ let grandPrice = parseInt(grandPriceText.innerText);
 const remainingSeatsText = document.getElementById('remaining-seat');
 let remainingSeats = parseInt(remainingSeatsText.innerText);
 const applyButton = document.getElementById('apply-btn');
+const bookedCartDiv = document.getElementById('price-container');
 
 function addNewRow(button) {
   if (button.getAttribute('data-clicked') === 'true') {
     alert('This seat has already been booked.');
     return;
   }
-  if (numberOfSeat === 4) {
-    alert('You cannot  buy more than 4 tickets at a same time.');
-    applyButton.classList.add('cursor-pointer', 'opacity-100', 'enabled');
+  
+  if (numberOfBookedSeat === 4) {
+    alert('You cannot buy more than 4 tickets at a same time.');
     return;
   }
 
   button.classList.add('bg-lime-500', 'hover:bg-lime-700', 'text-white', 'font-medium');
 
-  const buttonId = button.id.substring(5, 7);
-  const newRow = [buttonId, 'Economy', 550]
-  const bookedCartDiv = document.getElementById('price-container');
-
+  const newRow = [button.innerText, 'Economy', 550];
   for (let i = 0; i < 3; i++) {
     let paragraph = document.createElement('p');
     paragraph.textContent = newRow[i];
     bookedCartDiv.appendChild(paragraph);
-    paragraph.classList.add('text-gray-950', 'text-opacity-60', 'font-normal')
+    paragraph.classList.add('text-gray-950', 'text-opacity-60', 'font-normal');
     if(i===1){
       paragraph.classList.add('justify-self-center')
     }
@@ -42,17 +40,16 @@ function addNewRow(button) {
 
   remainingSeats--;
   remainingSeatsText.innerText = remainingSeats;
-  numberOfSeat++;
-  numberOfSeatText.innerText = numberOfSeat;
-  totalPrice += 550;
+  numberOfBookedSeat++;
+  numberOfBookedSeatText.innerText = numberOfBookedSeat;
+  totalPrice = numberOfBookedSeat*550;
   totalPriceText.innerText = totalPrice;
   grandPrice = totalPrice;
   grandPriceText.innerText = totalPrice;
   
-  if(numberOfSeat === 4){
+  if(numberOfBookedSeat === 4){
     applyButton.classList.add('opacity-100');
     applyButton.style.cursor = 'pointer';
     applyButton.style.pointerEvents = 'auto';
-    console.log(applyButton);
   }
 }
