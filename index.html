@@ -377,6 +377,11 @@
   <script src="js/call AddNewRowFn.js"></script>
   <script>
     function successMessage(){
+      if(totalPriceText.innerText === '0'){
+        alert("Please Buy a Ticket First.");
+        return;
+      }
+
       document.getElementById('success-msg-container').classList.remove('hidden');
       document.getElementById('success-msg-container').classList.add('flex');
     }
