@@ -72,7 +72,7 @@
   <main class="flex flex-col justify-between gap-10 lg:gap-[120px]">
     <section class="offer-section px-4 lg:px-32 flex flex-col gap-6 lg:gap-12 justify-center">
       <h1 class="text-center text-gray-950 text-3xl lg:text-[40px] font-bold font-['Raleway']">Best offers for you</h1>
-      <div class="flex justify-between flex-col items-center lg:flex-row">
+      <div class="flex justify-between flex-col items-center gap-4 lg:flex-row">
         <div class="w-max coupon-1 bg-yellow-400 rounded-3xl flex gap-0">
           <div class="offer-percentage flex flex-col justify-center items-center px-8 lg:px-[52px]">
             <div>
@@ -83,7 +83,7 @@
               <span class="text-gray-950 text-opacity-50 text-sm lg:text-lg font-medium font-['Inter'] leading-9">use by February 2024</span>
             </div>
           </div>
-            <img src="images/cupon-devider.png" class="max-h-48 lg:h-auto">
+            <img src="images/cupon-devider.png" class="max-h-48 lg:h-full">
           <div class="coupon-code flex flex-col justify-center items-center px-4 lg:px-[52px]">
               <h2 id="first-coupon"
                 class="text-center min-w-[150px] text-gray-950 text-3xl  font-bold font-['Raleway'] leading-[57.60px]">NEW15</h2>
@@ -102,7 +102,7 @@
                 2024</span>
             </div>
           </div>
-          <img src="images/cupon-devider.png" class="max-h-48 lg:h-auto">
+          <img src="images/cupon-devider.png" class="max-h-48 lg:h-full">
           <div class="coupon-code flex flex-col justify-center items-center px-4 lg:px-[52px]">
             <h2 id="second-coupon"
               class="text-center min-w-[150px] text-gray-950 text-3xl  font-bold font-['Raleway'] leading-[57.60px]">Couple 20</h2>
@@ -115,55 +115,55 @@
         All Offers</button>
     </section>
     <section
-      class="buy-ticket w-full bg-stone-50 rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-lime-400 px-[135px] py-[120px] flex flex-col gap-6">
+      class="buy-ticket w-full bg-stone-50 rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-lime-400 px-8 lg:px-[135px] py-8 lg:py-[120px] flex flex-col gap-4 lg:gap-6">
 
-      <h2 class="text-center text-gray-950 text-[40px] font-bold font-['Raleway']">City Cruiser</h2>
+      <h2 class="text-center text-gray-950 text-3xl lg:text-[40px] font-bold font-['Raleway']">City Cruiser</h2>
       <p
-        class="w-[736px] text-center text-gray-950 text-opacity-60 text-lg font-normal font-['Inter'] leading-[30px] mx-auto">
+        class="w-9/12 lg:w-[736px] text-center text-gray-950 text-opacity-60 text-sm lg:text-lg font-normal font-['Inter'] leading-7 lg:leading-[30px] mx-auto">
         Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow
         for a streamlined.</p>
-      <div class="bus-info-container flex bg-white mt-6">
+      <div class="bus-info-container flex flex-col bg-white mt-6">
         <div class="bus-info flex-1 p-8">
           <div class="bus-info-head flex items-center gap-4">
             <img src="images/bus-logo.png" alt="">
             <div class="bus-info-head-header">
-              <div class="text-gray-950 text-[32px] font-bold font-['Raleway']">Horizon Coach</div>
-              <p class="text-gray-950 text-opacity-60 text-lg font-normal font-['Inter']">Coach-009-WEB ! AC_Business
+              <h2 class="text-gray-950 text-xl lg:text-[32px] font-bold font-['Raleway']">Horizon Coach</h2>
+              <p class="text-gray-950 text-opacity-60 text-sm lg:text-lg font-normal mt-2 font-['Inter']">Coach-009-WEB ! AC_Business
               </p>
             </div>
             <div
-              class="h-12 px-[30px] py-4 bg-lime-600 bg-opacity-10 rounded-xl border border-lime-400 border-opacity-40 justify-center items-center gap-2.5 inline-flex ml-auto">
-              <img src="images/seat-green.png" class="w-6 h-6">
-              <div class="text-center text-[#1DD100] text-lg font-medium font-['Inter']">
+              class="w-[250px] max-h-fit px-4 lg:px-[30px] py-4 bg-lime-600 bg-opacity-10 rounded-xl border border-lime-400 border-opacity-40 justify-center items-center gap-2.5 inline-flex ml-auto">
+              <img src="images/seat-green.png" class="w-8 h-8">
+              <div class="min-w-24 text-center text-[#1DD100] text-lg font-medium font-['Inter']">
                 <span id="remaining-seat">40</span> seats left
               </div>
             </div>
           </div>
           <div class="bus-schedule bg-stone-50 rounded-3xl p-8 flex flex-col gap-6">
             <div class="route flex justify-between">
-              <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Route</p>
-              <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Dhaka-Sylhet</p>
+              <p class="text-gray-950 text-opacity-60 text-base lg:text-lg font-semibold font-['Raleway']">Route</p>
+              <p class="text-gray-950 text-opacity-60 text-base lg:text-lg font-semibold font-['Raleway']">Dhaka-Sylhet</p>
             </div>
             <div class="w-full h-[0px] border border-dashed border-gray-950 border-opacity-20"></div>
             <div class="departure  flex justify-between">
-              <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Departure Time</p>
-              <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">9:00 PM</p>
+              <p class="text-gray-950 text-opacity-60 text-base lg:text-lg font-semibold font-['Raleway']">Departure Time</p>
+              <p class="text-gray-950 text-opacity-60 text-base lg:text-lg font-semibold font-['Raleway']">9:00 PM</p>
             </div>
             <div class="w-full h-[0px] border border-dashed border-gray-950 border-opacity-20"></div>
-            <div class="destination-info flex justify-between gap-6">
-              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-4">
-                <h3 class="text-gray-950 text-opacity-80 font-medium font-['Inter']">Boarding Point - Laxmipur</h3>
+            <div class="destination-info flex justify-between gap-2 lg:gap-6">
+              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-2 lg:p-4">
+                <h3 class="text-xs text-center lg:text-base text-gray-950 text-opacity-80 font-medium font-['Inter']">Boarding Point - Laxmipur</h3>
               </div>
-              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-4">
-                <h3 class="text-gray-950 text-opacity-80 font-medium font-['Inter']">Dropping Point - Bogura</h3>
+              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-2 lg:p-4">
+                <h3 class="text-xs text-center lg:text-base text-gray-950 text-opacity-80 font-medium font-['Inter']">Dropping Point - Bogura</h3>
               </div>
-              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-4">
-                <h3 class="text-gray-950 text-opacity-80 font-medium font-['Inter']">Est. Time - 11 Hour</h3>
+              <div class="bg-gray-950 bg-opacity-5 rounded-xl flex justify-center items-center p-2 lg:p-4">
+                <h3 class="text-xs text-center lg:text-base text-gray-950 text-opacity-80 font-medium font-['Inter']">Est. Time - 11 Hour</h3>
               </div>
             </div>
           </div>
         </div>
-        <img src="images/info-devider.png" alt="">
+        <img src="images/info-devider.png" alt="" class="hidden lg:block">
         <div class="ticket-price-container flex flex-col items-center justify-center gap-6 flex-1">
           <img src="images/fare.png" alt="">
           <div class="text-center text-gray-950 text-[32px] font-bold font-['Raleway'] leading-10">
