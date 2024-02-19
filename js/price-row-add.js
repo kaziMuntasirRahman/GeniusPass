@@ -14,14 +14,14 @@ function addNewRow(button) {
     alert('This seat has already been booked.');
     return;
   }
-  
+
   if (numberOfBookedSeat === 4) {
     alert('You cannot buy more than 4 tickets at a same time.');
     return;
   }
 
   button.classList.add('bg-green-700', 'hover:bg-green-400', 'text-white', 'font-medium');
-  
+
 
   const newRow = [button.innerText, 'Economy', 550];
   for (let i = 0; i < 3; i++) {
@@ -29,25 +29,27 @@ function addNewRow(button) {
     paragraph.textContent = newRow[i];
     bookedCartDiv.appendChild(paragraph);
     paragraph.classList.add('text-gray-950', 'text-opacity-60', 'font-normal');
-    if(i===1){
+    if (i === 1) {
       paragraph.classList.add('justify-self-center')
     }
-    else if(i===2){
+    else if (i === 2) {
       paragraph.classList.add('justify-self-end')
     }
   }
-  
+
   button.setAttribute('data-clicked', 'true');
 
   remainingSeats--;
   remainingSeatsText.innerText = remainingSeats;
   numberOfBookedSeat++;
   numberOfBookedSeatText.innerText = numberOfBookedSeat;
-  totalPrice = numberOfBookedSeat*550;
+  totalPrice = numberOfBookedSeat * 550;
   totalPriceText.innerText = totalPrice;
   grandPriceText.innerText = totalPrice;
+
+  document.getElementById('submit-btn').classList.remove('pointer-events-none', 'opacity-50');
   
-  if(numberOfBookedSeat === 4){
+  if (numberOfBookedSeat === 4) {
     applyButton.classList.remove('pointer-events-none', 'opacity-40');
   }
 }

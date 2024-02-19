@@ -73,10 +73,11 @@
         <div class="coupon-1 bg-yellow-400 rounded-3xl flex gap-0">
           <div class="offer-percentage flex flex-col justify-center items-center px-[52px]">
             <div>
-              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">15% OFF</h2><br/>
-              
+              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">15% OFF</h2>
+              <br />
+
               <span class="text-gray-950 text-opacity-80 text-xl font-semibold font-['Inter'] leading-9">on your next
-                purchase</span><br/>
+                purchase</span><br />
               <span class="text-gray-950 text-opacity-50 text-lg font-medium font-['Inter'] leading-9">use by January
                 2024</span>
             </div>
@@ -84,7 +85,7 @@
           <img src="images/cupon-devider.png">
           <div class="coupon-code flex flex-col justify-center items-center px-[52px]">
             <div class="text-center"><span id="first-coupon"
-                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">NEW15</span><br/><span
+                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">NEW15</span><br /><span
                 class="text-gray-950 text-opacity-40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</span>
             </div>
           </div>
@@ -92,10 +93,11 @@
         <div class="coupon-2 bg-red-300 rounded-3xl flex gap-0">
           <div class="offer-percentage flex flex-col justify-center items-center px-[52px]">
             <div>
-              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">20% OFF</h2><br/>
-              
+              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">20% OFF</h2>
+              <br />
+
               <span class="text-gray-950 text-opacity-80 text-xl font-semibold font-['Inter'] leading-9">on your next
-                purchase</span><br/>
+                purchase</span><br />
               <span class="text-gray-950 text-opacity-50 text-lg font-medium font-['Inter'] leading-9">use by January
                 2024</span>
             </div>
@@ -103,7 +105,8 @@
           <img src="images/cupon-devider.png">
           <div class="coupon-code flex flex-col justify-center items-center px-[52px]">
             <div class="text-center"><span id="second-coupon"
-                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple 20</span><br/><span
+                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple
+                20</span><br /><span
                 class="text-gray-950 text-opacity-40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</span>
             </div>
           </div>
@@ -296,7 +299,7 @@
               <h3 class="">BDT <span id="total-price">0</span></h3>
             </div>
             <label id="coupon-level" class="input flex items-center">
-              <input id="input-coupon" type="text" class="grow" placeholder="Have any Coupon?"/>
+              <input id="input-coupon" type="text" class="grow" placeholder="Have any Coupon?" />
               <button id="apply-btn" onclick="hello()"
                 class="btn w-20 h-10 bg-[#1DD100] hover:bg-green-500 rounded-lg text-white text-base font-semibold font-['Inter'] opacity-40 pointer-events-none">Apply</button>
             </label>
@@ -305,27 +308,28 @@
               <h3>BDT <span id="grand-total">0</span></h3>
             </div>
           </div>
-          <div class="flex flex-col gap-6">
+          <form class="flex flex-col gap-6">
             <h2 class="text-gray-950 text-base font-semibold font-['Inter']">Passenger Name*</h2>
             <label class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
-              <input type="text" class="grow" placeholder="Enter Your Name" required />
+              <input id="passenger-name" type="text" class="grow" placeholder="Enter Your Name" required />
             </label>
             <h2 class="text-gray-950 text-base font-semibold font-['Inter']">Phone Number*</h2>
-            <label class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
+            <label id="phone-number" class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
               <input type="number" class="grow" placeholder="Enter Your Phone Number" required />
             </label>
             <h2 class="text-gray-950 text-base font-semibold font-['Inter']">Email ID</h2>
             <label class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
               <input type="email" class="grow" placeholder="Enter Your Email ID" />
             </label>
-            <button onclick="successMessage()" class="w-full px-[30px] py-[21px] bg-[#1dd100] rounded-2xl text-center text-white text-xl font-extrabold font-['Raleway']">Next</button>
+            <button id="submit-btn" onclick="successMessage()"
+              class="w-full px-[30px] py-[21px] bg-[#1dd100] rounded-2xl text-center text-white text-xl font-extrabold font-['Raleway'] pointer-events-none opacity-50">Next</button>
             <div class="terms-n-condition flex justify-around">
               <a class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter'] underline cursor-pointer">Terms
                 and Conditions</a>
               <a class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter'] underline cursor-pointer">Cancellation
                 Policy</a>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -376,14 +380,13 @@
   <script src="js/navigateToSeat.js"></script>
   <script src="js/call AddNewRowFn.js"></script>
   <script>
-    function successMessage(){
-      if(totalPriceText.innerText === '0'){
-        alert("Please Buy a Ticket First.");
-        return;
+    function successMessage() {
+      const phoneNumber = document.getElementById('phone-number').value;
+      const passengerName = document.getElementById('passenger-name').value;
+      if (phoneNumber && passengerName) {
+        document.getElementById('success-msg-container').classList.remove('hidden');
+        document.getElementById('success-msg-container').classList.add('flex');
       }
-
-      document.getElementById('success-msg-container').classList.remove('hidden');
-      document.getElementById('success-msg-container').classList.add('flex');
     }
   </script>
 </body>
