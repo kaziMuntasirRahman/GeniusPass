@@ -2,12 +2,7 @@ const coupon1 = document.getElementById('first-coupon').innerText;
 const coupon2 = document.getElementById('second-coupon').innerText;
 
 
-// function couponApply() {
-
-// }
-
-
-function hello() {
+function applyCoupon() {
   const couponValue = document.getElementById('input-coupon').value;
   if (couponValue === coupon1) {
     grandPrice = totalPrice - (totalPrice * 15 / 100);
