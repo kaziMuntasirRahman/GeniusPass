@@ -53,10 +53,13 @@
     </nav>
     <section class="banner-section mt-4 lg:mt-9 relative">
       <img src="images/banner.png" class="w-full rounded-[32px]">
-      <div class="w-full h-full absolute top-0 left-0 flex justify-center items-center flex-col  gap-4 lg:gap-10 py-[70px]">
-        <h1 class="w-3/5 text-center text-white text-3xl lg:text-[64px] font-extrabold font-['Raleway'] leading-10 lg:leading-[86px]">
+      <div
+        class="w-full h-full absolute top-0 left-0 flex justify-center items-center flex-col  gap-4 lg:gap-10 py-[70px]">
+        <h1
+          class="w-3/5 text-center text-white text-3xl lg:text-[64px] font-extrabold font-['Raleway'] leading-10 lg:leading-[86px]">
           End-to-End Travel with <span class="text-[#1DD100]">City Cruiser</span></h1>
-        <p class="w-11/12 lg:w-[691px] text-center text-white text-lg font-normal font-['Inter']">Yes, you can run unit tests and
+        <p class="w-11/12 lg:w-[691px] text-center text-white text-lg font-normal font-['Inter']">Yes, you can run unit
+          tests and
           view the results directly within the app. The integrated testing features allow for a streamlined.</p>
         <button onclick="navigateToSeat()"
           class="w-28 lg:w-[170px] h-8 lg:h-[65px] lg:px-[30px] py-[21px] bg-[#1DD100] rounded-xl justify-center items-center inline-flex lg:mt-3">
@@ -66,50 +69,45 @@
     </section>
   </header>
 
-  <main class="flex flex-col justify-between gap-[120px]">
-    <section class="offer-section px-32 flex flex-col gap-12 justify-center">
-      <h1 class="text-center text-gray-950 text-[40px] font-bold font-['Raleway']">Best offers for you</h1>
-      <div class="flex justify-between flex-col lg:flex-row">
-        <div class="coupon-1 bg-yellow-400 rounded-3xl flex gap-0">
-          <div class="offer-percentage flex flex-col justify-center items-center px-[52px]">
+  <main class="flex flex-col justify-between gap-10 lg:gap-[120px]">
+    <section class="offer-section px-4 lg:px-32 flex flex-col gap-6 lg:gap-12 justify-center">
+      <h1 class="text-center text-gray-950 text-3xl lg:text-[40px] font-bold font-['Raleway']">Best offers for you</h1>
+      <div class="flex justify-between flex-col items-center lg:flex-row">
+        <div class="w-max coupon-1 bg-yellow-400 rounded-3xl flex gap-0">
+          <div class="offer-percentage flex flex-col justify-center items-center px-8 lg:px-[52px]">
             <div>
-              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">15% OFF</h2>
+              <h2 class="text-gray-950 text-opacity-80 text-3xl lg:text-[40px] font-black font-['Inter'] leading-4 lg:leading-9">15% OFF</h2>
               <br />
-
-              <span class="text-gray-950 text-opacity-80 text-xl font-semibold font-['Inter'] leading-9">on your next
+              <span class="text-gray-950 text-opacity-80 text-base lg:text-xl font-semibold font-['Inter'] leading-4 lg:leading-9">on your next
                 purchase</span><br />
-              <span class="text-gray-950 text-opacity-50 text-lg font-medium font-['Inter'] leading-9">use by January
-                2024</span>
+              <span class="text-gray-950 text-opacity-50 text-sm lg:text-lg font-medium font-['Inter'] leading-9">use by February 2024</span>
             </div>
           </div>
-          <img src="images/cupon-devider.png">
-          <div class="coupon-code flex flex-col justify-center items-center px-[52px]">
-            <div class="text-center"><span id="first-coupon"
-                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">NEW15</span><br /><span
-                class="text-gray-950 text-opacity-40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</span>
-            </div>
+            <img src="images/cupon-devider.png" class="max-h-48 lg:h-auto">
+          <div class="coupon-code flex flex-col justify-center items-center px-4 lg:px-[52px]">
+              <h2 id="first-coupon"
+                class="text-center min-w-[150px] text-gray-950 text-3xl  font-bold font-['Raleway'] leading-[57.60px]">NEW15</h2>
+              <p class="text-gray-950 text-opacity-40  text-lg font-medium font-['Raleway'] leading-9">Coupon Code</p>
           </div>
         </div>
         <div class="coupon-2 bg-red-300 rounded-3xl flex gap-0">
-          <div class="offer-percentage flex flex-col justify-center items-center px-[52px]">
+          <div class="offer-percentage flex flex-col justify-center items-center px-8 lg:px-[52px]">
             <div>
-              <h2 class="text-gray-950 text-opacity-80 text-[40px] font-black font-['Inter'] leading-9">20% OFF</h2>
+              <h2 class="text-gray-950 text-opacity-80 text-3xl lg:text-[40px] font-black font-['Inter'] leading-4 lg:leading-9">20% OFF</h2>
               <br />
 
-              <span class="text-gray-950 text-opacity-80 text-xl font-semibold font-['Inter'] leading-9">on your next
+              <span class="text-gray-950 text-opacity-80 text-base lg:text-xl font-semibold font-['Inter'] leading-4 lg:leading-9">on your next
                 purchase</span><br />
-              <span class="text-gray-950 text-opacity-50 text-lg font-medium font-['Inter'] leading-9">use by January
+              <span class="text-gray-950 text-opacity-50 text-sm lg:text-lg font-medium font-['Inter'] leading-9">use by February
                 2024</span>
             </div>
           </div>
-          <img src="images/cupon-devider.png">
-          <div class="coupon-code flex flex-col justify-center items-center px-[52px]">
-            <div class="text-center"><span id="second-coupon"
-                class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple
-                20</span><br /><span
-                class="text-gray-950 text-opacity-40 text-xl font-medium font-['Raleway'] leading-9">Coupon Code</span>
-            </div>
-          </div>
+          <img src="images/cupon-devider.png" class="max-h-48 lg:h-auto">
+          <div class="coupon-code flex flex-col justify-center items-center px-4 lg:px-[52px]">
+            <h2 id="second-coupon"
+              class="text-center min-w-[150px] text-gray-950 text-3xl  font-bold font-['Raleway'] leading-[57.60px]">Couple 20</h2>
+            <p class="text-gray-950 text-opacity-40  text-lg font-medium font-['Raleway'] leading-9">Coupon Code</p>
+        </div>
         </div>
       </div>
       <button
@@ -315,7 +313,7 @@
             </label>
             <h2 class="text-gray-950 text-base font-semibold font-['Inter']">Phone Number*</h2>
             <label class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
-              <input  id="phone-number" type="number" class="grow" placeholder="Enter Your Phone Number" required />
+              <input id="phone-number" type="number" class="grow" placeholder="Enter Your Phone Number" required />
             </label>
             <h2 class="text-gray-950 text-base font-semibold font-['Inter']">Email ID</h2>
             <label class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
