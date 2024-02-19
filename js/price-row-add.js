@@ -47,7 +47,7 @@ function addNewRow(button) {
   totalPriceText.innerText = totalPrice;
   grandPriceText.innerText = totalPrice;
 
-  document.getElementById('submit-btn').classList.remove('pointer-events-none', 'opacity-50');
+  document.getElementById('nxt-btn').classList.remove('pointer-events-none', 'opacity-50');
   
   if (numberOfBookedSeat === 4) {
     applyButton.classList.remove('pointer-events-none', 'opacity-40');

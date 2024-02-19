@@ -308,21 +308,21 @@
               <h3>BDT <span id="grand-total">0</span></h3>
             </div>
           </div>
-          <form class="flex flex-col gap-6">
+          <form action="javascript:successMessage()" class="flex flex-col gap-6">
             <h2 class="text-gray-950 text-base font-semibold font-['Inter']">Passenger Name*</h2>
             <label class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
               <input id="passenger-name" type="text" class="grow" placeholder="Enter Your Name" required />
             </label>
             <h2 class="text-gray-950 text-base font-semibold font-['Inter']">Phone Number*</h2>
-            <label id="phone-number" class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
-              <input type="number" class="grow" placeholder="Enter Your Phone Number" required />
+            <label class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
+              <input  id="phone-number" type="number" class="grow" placeholder="Enter Your Phone Number" required />
             </label>
             <h2 class="text-gray-950 text-base font-semibold font-['Inter']">Email ID</h2>
             <label class="input input-bordered flex items-center gap-2 p-8 rounded-xl">
               <input type="email" class="grow" placeholder="Enter Your Email ID" />
             </label>
-            <button id="submit-btn" onclick="successMessage()"
-              class="w-full px-[30px] py-[21px] bg-[#1dd100] rounded-2xl text-center text-white text-xl font-extrabold font-['Raleway'] pointer-events-none opacity-50">Next</button>
+            <button id="nxt-btn" type="submit" onclick="successMessage()"
+              class="w-full py-[21px] bg-[#1dd100] rounded-2xl text-center text-white text-xl font-extrabold font-['Raleway'] pointer-events-none opacity-50">Next</button>
             <div class="terms-n-condition flex justify-around">
               <a class="text-gray-950 text-opacity-60 text-base font-normal font-['Inter'] underline cursor-pointer">Terms
                 and Conditions</a>
@@ -379,16 +379,7 @@
   <script src="js/coupon-match.js"></script>
   <script src="js/navigateToSeat.js"></script>
   <script src="js/call AddNewRowFn.js"></script>
-  <script>
-    function successMessage() {
-      const phoneNumber = document.getElementById('phone-number').value;
-      const passengerName = document.getElementById('passenger-name').value;
-      if (phoneNumber && passengerName) {
-        document.getElementById('success-msg-container').classList.remove('hidden');
-        document.getElementById('success-msg-container').classList.add('flex');
-      }
-    }
-  </script>
+  <script src="js/showSuccessPage.js"></script>
 </body>
 
 </html>

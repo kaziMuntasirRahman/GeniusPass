@@ -1,4 +1,3 @@
-
 let seatButtons = document.querySelectorAll('.seats button');
 
 // Add click event listener to each button
